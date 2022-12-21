@@ -1,10 +1,16 @@
 class FizzBuzz {
 
-    writeFizz(aNumber){
-        if(aNumber%3 === 0){
+    constructor(aNumber){
+        this.aNumber = aNumber;
+    }
 
-            return "Fizz";
+    writeFizz(aNumber){
+        let returnString = "";
+        if(aNumber%3 === 0){
+            returnString = "Fizz";
         }
+        
+        return returnString;
     }
 }
 describe("FizzBuzz", () => {
@@ -32,6 +38,15 @@ describe("FizzBuzz", () => {
         const aNumberisNine = 9;
 
         const numberDivisibleByThree = fizzBuzz.writeFizz(aNumberisNine);
+
+        expect("Fizz").toBe(numberDivisibleByThree);
+    });
+
+    it("Writes Fizz when a number is divisible by three", () => {
+        const fizzBuzz = new FizzBuzz();
+        const aNumber = 1566;
+
+        const numberDivisibleByThree = fizzBuzz.writeFizz(aNumber);
 
         expect("Fizz").toBe(numberDivisibleByThree);
     });
