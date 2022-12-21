@@ -1,6 +1,6 @@
 # KatasMentoring
 
-Estas katas consisten en la resolución de katas, paso a paso, para el aprendizaje del Testing con las katas descritas en:
+Estas repositorio consisten en la resolución de katas, paso a paso, para el aprendizaje del Testing con las katas descritas en:
 
 - https://zerolivedev.gitlab.io/katayuno-jekill/
 
