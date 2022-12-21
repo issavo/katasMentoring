@@ -26,4 +26,13 @@ describe("FizzBuzz", () => {
 
         expect("Fizz").toBe(numberDivisibleByThree);
     });
+
+    it ("Writes Fizz when the number is nine", () => {
+        const fizzBuzz = new FizzBuzz();
+        const aNumberisNine = 9;
+
+        const numberDivisibleByThree = fizzBuzz.writeFizz(aNumberisNine);
+
+        expect("Fizz").toBe(numberDivisibleByThree);
+    });
 });
