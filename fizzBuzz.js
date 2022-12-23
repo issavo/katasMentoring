@@ -12,6 +12,10 @@ class FizzBuzz {
         
         return returnString;
     }
+
+    writeBuzz(aNumber){
+        
+    }
 }
 describe("FizzBuzz", () => {
     it("Writes Fizz when the number is three", () => {
@@ -35,9 +39,9 @@ describe("FizzBuzz", () => {
 
     it ("Writes Fizz when the number is nine", () => {
         const fizzBuzz = new FizzBuzz();
-        const aNumberisNine = 9;
+        const aNumberIsNine = 9;
 
-        const numberDivisibleByThree = fizzBuzz.writeFizz(aNumberisNine);
+        const numberDivisibleByThree = fizzBuzz.writeFizz(aNumberIsNine);
 
         expect("Fizz").toBe(numberDivisibleByThree);
     });
@@ -49,5 +53,14 @@ describe("FizzBuzz", () => {
         const numberDivisibleByThree = fizzBuzz.writeFizz(aNumber);
 
         expect("Fizz").toBe(numberDivisibleByThree);
+    });
+
+    it("Writes Buzz when a number is five", () => {
+        const fizzBuzz = new FizzBuzz();
+        const aNumberIsFive = 5;
+
+        const numberDivisibleByFive = fizzBuzz.writeBuzz(aNumberIsFive);
+
+        expect("Buzz").toBe(numberDivisibleByFive);
     });
 });
