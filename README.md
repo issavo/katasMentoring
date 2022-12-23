@@ -1,12 +1,21 @@
 # KatasMentoring
 
-Estas repositorio consisten en la resolución de katas, paso a paso, para el aprendizaje del Testing con las katas descritas en:
+- This repository consists of step-by-step katas for learning testing. 
+  Described in:
+    - https://zerolivedev.gitlab.io/katayuno-jekill/
 
-- https://zerolivedev.gitlab.io/katayuno-jekill/
+- For teaching:
+    - TDD
+    - BabySteps  
+    - The simplest thing that could possibly work
+    - Hurry to green 
+    - Refactor 
 
-## Como usarlas:
+## How to use it:
 
-1. Descargar el repositorio
-2. Abrir el archivo AbremeEnTuNavegador.html en el navegador.
+1. Download repository.
+2. Open the file OpenInYourBrowser.html in the browser.
+3. Set test to red.
+4. Set test to green.
 
 
