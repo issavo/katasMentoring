@@ -14,7 +14,11 @@ class FizzBuzz {
     }
 
     writeBuzz(aNumber){
-        
+        let returnString = "";
+        if(aNumber%5 === 0){
+            returnString = "Buzz";
+        }
+        return returnString;
     }
 }
 describe("FizzBuzz", () => {
@@ -63,4 +67,7 @@ describe("FizzBuzz", () => {
 
         expect("Buzz").toBe(numberDivisibleByFive);
     });
+
+    
+
 });
