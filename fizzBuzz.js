@@ -76,5 +76,23 @@ describe("FizzBuzz", () => {
 
         expect("Buzz").toBe(numberDivisibleByFive);
     });
+
+    it("Writes Buzz when a number is fiften", () => {
+        const fizzBuzz = new FizzBuzz();
+        const aNumberIsFifteen = 15;
+
+        const numberDivisibleByFive = fizzBuzz.writeBuzz(aNumberIsFifteen);
+
+        expect("Buzz").toBe(numberDivisibleByFive);
+    });
+
+    it("Writes Buzz when a number is divisible by five", () => {
+        const fizzBuzz = new FizzBuzz();
+        const aNumber = 2145;
+
+        const numberDivisibleByFive = fizzBuzz.writeBuzz(aNumber);
+
+        expect("Buzz").toBe(numberDivisibleByFive);
+    });
     
 });
