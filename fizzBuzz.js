@@ -18,6 +18,13 @@ class FizzBuzz {
         if(aNumber%5 === 0){
             returnString = "Buzz";
         }
+        
+        return returnString;
+    }
+    
+    writeFizzBuzz(aNumber){
+        let returnString = "";
+
         return returnString;
     }
 }
@@ -93,6 +100,15 @@ describe("FizzBuzz", () => {
         const numberDivisibleByFive = fizzBuzz.writeBuzz(aNumber);
 
         expect("Buzz").toBe(numberDivisibleByFive);
+    });
+
+    it("Writes FizzBuzz when the number is divisible by both three and five", () => {
+        const fizzBuzz = new FizzBuzz();
+        const aNumber = 2145;
+
+        const numberDivisibleByThreeAndFive = fizzBuzz.writeFizzBuzz(aNumber);
+
+        expect("FizzBuzz").toBe(numberDivisibleByThreeAndFive);
     });
     
 });
